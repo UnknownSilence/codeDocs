@@ -1,0 +1,25 @@
+{
+  "name": "codedocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [
+    "app",
+    "code",
+    "live"
+  ],
+  "author": "Trent Hardy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "monaco-editor": "^0.15.6",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
