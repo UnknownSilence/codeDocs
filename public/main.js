@@ -14,8 +14,9 @@ window.addEventListener("load", function () {
     });
 })
 
+var port = process.env.PORT || 3000;
 
-const socket = io.connect("http://10.0.0.32:4001");
+const socket = io.connect(port);
 
 var submitBtn = document.getElementById("commitBtn");
 
