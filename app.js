@@ -16,7 +16,7 @@ const server = app.listen(port, function () {
 
 app.use(express.static('public'));
 
-const io = socket(server);
+const io = SocketIO(server);
 
 io.on('connection', function (socket) {
     console.log("connection made using socket", socket.id);
