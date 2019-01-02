@@ -6,7 +6,10 @@ const socket = require('socket.io');
 
 const app = express();
 
-const server = app.listen(4001, '0.0.0.0', function () {
+var port = process.env.PORT || 3000;
+
+
+const server = app.listen(port, function () {
     console.log("port listenging to requests");
 })
 // serve my static files (Html, css, resources, etc.)
