@@ -14,9 +14,9 @@ window.addEventListener("load", function () {
     });
 })
 
-var port = process.env.PORT || 3000;
+//var port = process.env.PORT || 3000;
 
-const socket = io.connect(port);
+const socket = io();
 
 var submitBtn = document.getElementById("commitBtn");
 
