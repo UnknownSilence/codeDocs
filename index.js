@@ -19,8 +19,9 @@ io.on('connection', function (socket) {
     console.log("connection made using socket", socket.id);
 
     socket.on('code', function (data) {
-        io.emit('code', data);
-    })
+        socket.broadcast.emit('code', data);
+    });
+
 
 
 });

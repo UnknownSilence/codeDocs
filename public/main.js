@@ -20,11 +20,12 @@ const socket = io.connect("http://10.0.0.32:4001");
 var submitBtn = document.getElementById("commitBtn");
 
 
-submitBtn.addEventListener("click", function () {
+document.addEventListener('keyup', function () {
     var codeEmit = editor.getValue();
     //console.log(codeBox.value);
     socket.emit('code', codeEmit)
 });
+
 
 //Listen for changes
 socket.on('code', function (data) {
